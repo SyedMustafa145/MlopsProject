@@ -18,7 +18,7 @@ COPY eurusd.csv .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the necessary port for your server (e.g., Flask)
-EXPOSE 8086
+EXPOSE 5000
 
 # Run the server script when the container starts
 CMD [ "python", "server.py" ]
