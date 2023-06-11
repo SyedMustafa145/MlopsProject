@@ -46,7 +46,7 @@ def hello_world():
 #     last_20_close = np.append(last_20_close, result_close)
 #     print("Calling from server.py")
 #     print(result_open,result_high,result_low,result_close)
-#     return json.dumps()
+
 
 
 import json
