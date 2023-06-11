@@ -61,7 +61,7 @@ def predict():
     # Select the last 20 values from the "low" column
     last_20_low = df['low'].tail(10).values
 
-    # Select the last 20 values from the "open" column
+  
     last_20_open = df['open'].tail(10).values
     result_open = np.round(lstm_open_predict(last_20_open), 5) 
     result_low = np.round(lstm_low_predict(last_20_low), 5) 
