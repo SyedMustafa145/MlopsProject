@@ -82,7 +82,7 @@ def predict():
         "last_20_close": last_20_close.round(5).tolist()
     }
     
-    # convert the dictionary to a JSON string and return it as the response
+   
     return json.dumps(response)
 
 
