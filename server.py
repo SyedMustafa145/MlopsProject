@@ -58,7 +58,7 @@ def predict():
     # Select the last 20 values from the "high" column
     last_20_high = df['high'].tail(10).values
 
-    # Select the last 20 values from the "low" column
+    
     last_20_low = df['low'].tail(10).values
 
   
