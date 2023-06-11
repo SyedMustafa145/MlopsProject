@@ -9,7 +9,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        bat 'docker run -d -p 8086:5000 server'
+        bat 'docker run -d -p 8086:8086 server'
         
       }
     }
