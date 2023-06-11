@@ -74,7 +74,7 @@ def predict():
     print("Calling from server.py")
     print(result_open, result_high, result_low, result_close)
     
-    # create a dictionary containing the arrays
+    
     response = {
         "last_20_open": last_20_open.round(5).tolist(),
         "last_20_high": last_20_high.round(5).tolist(),
