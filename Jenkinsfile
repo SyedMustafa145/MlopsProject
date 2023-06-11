@@ -4,12 +4,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'docker build -t myflaskapp .'
+        bat 'docker build -t server .'
       }
     }
     stage('Deploy') {
       steps {
-        bat 'docker run -d -p 8086:8086 myflaskapp'
+        bat 'docker run -d -p 8086:5000 server'
         
       }
     }
